@@ -9,11 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Krypto">
-        <activity android:name=".KeyInputActivity"></activity>
-        <activity
-            android:name=".ReceiveMessageActivity"
-            android:label="@string/receive_message_activity"></activity>
-        <activity android:name=".CreateMessageActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

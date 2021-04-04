@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/atbashFragment">
+
+    <fragment
+        android:id="@+id/atbashFragment"
+        android:name="com.vitassalvantes.krypto.AtbashFragment"
+        android:label="fragment_atbash"
+        tools:layout="@layout/fragment_atbash" >
+        <action
+            android:id="@+id/action_atbashFragment_to_receiveMessageFragment2"
+            app:destination="@id/receiveMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiveMessageFragment"
+        android:name="com.vitassalvantes.krypto.ReceiveMessageFragment"
+        android:label="fragment_receive_message"
+        tools:layout="@layout/fragment_receive_message" />
+    <fragment
+        android:id="@+id/caesarFragment"
+        android:name="com.vitassalvantes.krypto.CaesarFragment"
+        android:label="fragment_caesar"
+        tools:layout="@layout/fragment_caesar" >
+        <action
+            android:id="@+id/action_caesarFragment_to_receiveMessageFragment"
+            app:destination="@id/receiveMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeWordFragment"
+        android:name="com.vitassalvantes.krypto.CodeWordFragment"
+        android:label="fragment_code_word"
+        tools:layout="@layout/fragment_code_word" >
+        <action
+            android:id="@+id/action_codeWordFragment_to_receiveMessageFragment"
+            app:destination="@id/receiveMessageFragment" />
+    </fragment>
+</navigation>
